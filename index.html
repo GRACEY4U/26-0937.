@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Guide | Home</title>
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fdf6f0;  /* Soft warm white */
+            color: #4a4a4a;              /* Dark grey text for paragraphs */
+            line-height: 1.6;
+        }
+
+        /* ===== MENU BAR (Requirement 7) ===== */
+        .menu-bar {
+            background-color: #f8c9d4;    /* Soft pink */
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .menu-bar a {
+            color: #4a4a4a;
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            margin: 0 0.2rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .menu-bar a:hover {
+            background-color: #ffb6c1;    /* Lighter pink */
+            color: #2c3e50;
+            transform: scale(1.05);
+        }
+
+        /* ===== LAYOUT & CONTAINERS ===== */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h1, h2 {
+            color: #b76e79;                /* Rose gold text color */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f8c9d4;
+            padding-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        /* ===== IMAGE GALLERY (Requirement 2) ===== */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;            /* Stylish circle crop */
+            border: 5px solid #f8c9d4;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        /* ===== VIDEO GRID (Requirement 1) ===== */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .video-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .video-card p {
+            font-weight: bold;
+            margin-top: 0.5rem;
+            color: #b76e79;
+        }
+
+        /* ===== LISTS ===== */
+        .list-section {
+            background: #fff3f5;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        .unordered-list, .ordered-list {
+            margin-left: 2rem;
+            color: #4a4a4a;
+        }
+        .unordered-list li, .ordered-list li {
+            margin: 0.5rem 0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8c9d4;
+            color: #4a4a4a;
+            margin-top: 3rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Requirement 7: Menu Bar -->
+    <nav class="menu-bar">
+        <a href="index.html">Home</a>
+        <a href="looks.html">Makeup Looks</a>
+        <a href="products.html">Product Guide</a>
+        <a href="tips.html">Pro Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1 style="color: #b76e79;">✨ Welcome to Glam Guide ✨</h1>
+
+        <!-- Requirement 2: Five Images -->
+        <div class="image-gallery">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=200&h=200&fit=crop" alt="Makeup Brushes">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=200&h=200&fit=crop" alt="Lipstick Set">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&h=200&fit=crop" alt="Eyeshadow Palette">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=200&h=200&fit=crop" alt="Perfume and Makeup">
+            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=200&h=200&fit=crop" alt="Foundation Bottles">
+        </div>
+
+        <!-- Requirement 3: Five Formatted Paragraphs (First two on home page) -->
+        <h2>Your Ultimate Makeup Destination</h2>
+        <p>Welcome to the most comprehensive makeup guide on the web! Whether you're a beginner just starting with tinted moisturizer or a pro looking for advanced contouring hacks, we've got you covered. Our philosophy is simple: makeup should be fun, expressive, and empowering for everyone.</p>
+        
+        <p>We believe that beauty isn't about covering up who you are—it's about revealing the art that lives within you. From the perfect red lip to a subtle no-makeup look, we'll walk you through every technique with detailed tutorials and honest product reviews.</p>
+        
+        <p>Our team of professional makeup artists has curated this site to ensure you get reliable, up-to-date information. We test products on all skin types and tones, so you can find your perfect match without the guesswork. <span style="color: #b76e79; font-weight: bold;">(Check out our Product Guide for details!)</span></p>
+
+        <!-- Requirement 1: Five Videos (Updated with your YouTube links) -->
+        <h2>🎥 Featured Video Tutorials</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/x_kD3IUQpX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Everyday Glam Look</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/0ZeJ-JhaFxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Winged Liner Tutorial</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/x_kD3IUQpX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Soft Glam Routine</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/QVsErB_Fxz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Smokey Eye Magic</p>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/0ZeJ-JhaFxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>5 Minute Face</p>
+            </div>
+        </div>
+
+        <!-- Requirement 4 & 5: Ordered and Unordered Lists -->
+        <div class="list-section">
+            <h2>📋 Makeup Essentials</h2>
+            <div style="display: flex; gap: 3rem; flex-wrap: wrap;">
+                <!-- Unordered List -->
+                <div>
+                    <h3 style="color: #b76e79;">💼 Bag Must-Haves (Unordered)</h3>
+                    <ul class="unordered-list">
+                        <li>Hydrating Lip Balm</li>
+                        <li>Compact Mirror</li>
+                        <li>Mini setting spray</li>
+                        <li>Blotting papers</li>
+                        <li>Multitasking cheek tint</li>
+                    </ul>
+                </div>
+                <!-- Ordered List -->
+                <div>
+                    <h3 style="color: #b76e79;">✨ Morning Routine (Ordered)</h3>
+                    <ol class="ordered-list">
+                        <li>Moisturizer & Primer</li>
+                        <li>Foundation or BB Cream</li>
+                        <li>Concealer for brightening</li>
+                        <li>Blush & Highlighter</li>
+                        <li>Setting spray for all-day wear</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Requirement 3: Paragraphs 4 & 5 -->
+        <h2>Why Trust Our Glam Guide?</h2>
+        <p>With over a decade of combined experience in the beauty industry, our contributors have worked backstage at fashion weeks and top salons. We don't just tell you what products to buy; we teach you the "why" and "how" behind every technique, ensuring you build skills that last a lifetime.</p>
+        
+        <p>Our community is at the heart of everything we do. We constantly update our content based on your feedback and the latest trends. From sustainable beauty to inclusive shade ranges, we cover the topics that matter to you. Dive in and discover your most radiant self!</p>
+    </div>
+
+    <footer>
+        © 2025 Glam Guide | All rights reserved | Made with 💄 for makeup lovers
+    </footer>
+</body>
+</html>

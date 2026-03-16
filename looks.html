@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Guide | Makeup Looks</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #fdf6f0; color: #4a4a4a; }
+        .menu-bar {
+            background-color: #f8c9d4; padding: 1rem 0; text-align: center; position: sticky; top: 0; z-index: 100;
+        }
+        .menu-bar a {
+            color: #4a4a4a; text-decoration: none; padding: 0.8rem 1.8rem; margin: 0 0.2rem;
+            font-weight: 600; border-radius: 30px; transition: all 0.3s ease; display: inline-block;
+        }
+        .menu-bar a:hover { background-color: #ffb6c1; transform: scale(1.05); }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+        h1, h2 { color: #b76e79; margin: 2rem 0 1rem; border-bottom: 2px solid #f8c9d4; padding-bottom: 0.5rem; }
+        
+        /* Table Styles (Requirement 6) */
+        .looks-table {
+            width: 100%; border-collapse: collapse; margin: 2rem 0; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .looks-table th {
+            background-color: #f8c9d4; color: #4a4a4a; padding: 1rem; font-size: 1.2rem;
+        }
+        .looks-table td {
+            padding: 1rem; border-bottom: 1px solid #ffe4e8; text-align: center;
+        }
+        .looks-table tr:hover { background-color: #fff3f5; }
+        .looks-table img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; }
+
+        /* Added Feature: Description cards */
+        .look-desc { background: #fff3f5; padding: 1.5rem; border-radius: 15px; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <nav class="menu-bar">
+        <a href="index.html">Home</a>
+        <a href="looks.html">Makeup Looks</a>
+        <a href="products.html">Product Guide</a>
+        <a href="tips.html">Pro Tips</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>💄 Iconic Makeup Looks</h1>
+        <p>Explore five stunning makeup styles. Click the video links to watch tutorials!</p>
+
+        <!-- Requirement 6: First Table (Makeup Looks) -->
+        <h2>Look Inspiration Gallery</h2>
+        <table class="looks-table">
+            <thead>
+                <tr><th>Look Name</th><th>Key Products</th><th>Best For</th><th>Image</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Soft Glam</td><td>Peach tones, shimmer</td><td>Daytime</td><td><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=100&h=100&fit=crop" alt="Soft glam"></td></tr>
+                <tr><td>Bold Lip</td><td>Red lipstick, minimal eyes</td><td>Evening</td><td><img src="https://images.unsplash.com/photo-1585232351009-aa87416fca90?w=100&h=100&fit=crop" alt="Bold lip"></td></tr>
+                <tr><td>Cut Crease</td><td>Concealer, dark shadow</td><td>Parties</td><td><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" alt="Cut crease"></td></tr>
+                <tr><td>No-Makeup</td><td>Tinted moisturizer, mascara</td><td>Everyday</td><td><img src="https://images.unsplash.com/photo-1616683693504-3ea950b4f8d0?w=100&h=100&fit=crop" alt="No makeup"></td></tr>
+                <tr><td>Graphic Liner</td><td>Liquid liner, bright colors</td><td>Festivals</td><td><img src="https://images.unsplash.com/photo-1522338242992-e1a54906a3da?w=100&h=100&fit=crop" alt="Graphic liner"></td></tr>
+            </tbody>
+        </table>
+
+        <!-- Requirement 3: Paragraphs for each look (condensed into one formatted block) -->
+        <div class="look-desc">
+            <h2>✨ Detailed Descriptions</h2>
+            <p><span style="color:#b76e79; font-weight:bold;">Soft Glam:</span> A blend of neutral mattes with a pop of shimmer on the lids. It’s polished but not overdone—perfect for office or brunch.</p>
+            <p><span style="color:#b76e79; font-weight:bold;">Bold Lip:</span> Let your lips do the talking! Pair a classic red or berry stain with groomed brows and a touch of mascara for instant glamour.</p>
+            <p><span style="color:#b76e79; font-weight:bold;">Cut Crease:</span> This dramatic eye uses concealer to carve out the crease, creating depth. Ideal for photoshoots or nights out.</p>
+            <p><span style="color:#b76e79; font-weight:bold;">No-Makeup Look:</span> All about skin-like finishes. Use a dewy foundation, cream blush, and curled lashes for a fresh-faced glow.</p>
+            <p><span style="color:#b76e79; font-weight:bold;">Graphic Liner:</span> Break the rules with geometric shapes and neon liners. It’s an artistic expression that turns eyes into art.</p>
+        </div>
+    </div>
+    <footer>© 2025 Glam Guide</footer>
+</body>
+</html>
